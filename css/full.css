@@ -1,0 +1,705 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid darkgray; */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Fredoka One', cursive;
+font-family: 'Noto Sans KR', sans-serif; */
+}
+body{
+     background: #002e7f; 
+}
+.scroll{
+    height: 100vh;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+}
+
+ul, li{ list-style: none; }
+a:visited{
+    color: #fff;
+}
+a:link{
+    color: #fff;
+}
+.fp-controlArrow {
+    top: 9%;
+}
+.fp-controlArrow.fp-next {
+    right: 68%;
+    border-width: 28.5px 0 28.5px 24px;
+}
+.fp-controlArrow.fp-prev {
+    left: 4%;
+    border-width: 28.5px 24px 28.5px 0;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+
+
+
+.header{
+    background: url(../images/luca_01.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.header div:first-child{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+.header > div:first-child a{
+    padding: 20px;
+    letter-spacing:5px;
+}
+.header > div:last-child{
+margin-left: 30%;
+}
+.header > div:last-child p{
+    margin-top: 115%;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.part1{
+    background: url(../images/luca_02.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    text-align: center;
+    padding: 3%;
+}
+.part1 h1{
+    font-size: 45px;
+    padding: 2% 0 ;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing:10px;
+}
+.part1 p{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.part1 > div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.part1 .tab1 > ul li{
+    font-size: 18px;
+    padding: 15px 0 0 0;
+    margin: 15% 20px 0 20px;
+    margin-top: 15%;
+}
+.part1 .tab1 li:first-child{
+    margin-top: 70%;
+}
+.part1 .tab1 .content .conBox .mainv{
+    padding: 5% 0;
+}
+.part1 .tab1 .conBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.part1 .tab1 > ul li.on{
+    border-bottom: 2px solid #fff;
+}
+.part1 .tab1 .conBox .tab2{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+}
+.part1 .tab1 .conBox .tab2 > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.part1 .tab1 .conBox .tab2 > div:last-child p{
+    width: 250px;
+}
+.part1 .tab1 .content .conBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.part1 .tab1 .content .conBox.on{
+    display: block;
+}
+.part1 .tab1 .content .conBox .p1{
+    filter: grayscale(100%)
+}
+.part1 .tab1 .content .conBox .p1.on{
+    filter: grayscale(0%);
+}
+.part1 .tab1 .content .conBox .p1:hover{
+    filter: grayscale(0%);
+}
+.part1 .tab1 .content .conBox .tab2 .contBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 3% 0;
+}
+.part1 .tab1 .content .conBox .tab2 .contBox.on{
+    display: block;
+}
+.part1 img{
+    width: 250px;
+    height: 140px;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1{
+    position: relative;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../images/play.png) no-repeat;
+    background-size: 100% auto;
+    top: 30px;
+    left: 85px;
+}
+
+.part1 .conBox .trailer iframe{
+    width: 850px;
+    height: 475px;
+}
+
+
+.scroll_h{
+    width:100%;
+}
+.part2 h2,
+.part3 h2,
+.part4 h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding: 0% 0 2% 5%;
+}
+.part2{
+    background: url(../images/luca_05.png) no-repeat;
+    position: relative;
+    height: 100vh;
+    padding: 3%;
+}
+
+.part2 .luca{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: right;
+}
+.part2 .luca p{
+    padding: 0 20%;
+    word-break: keep-all;
+}
+.part2 .luca p span#read1{
+    display: none;
+}
+h3{
+    font-size: 37px;
+    padding: 5% 0 5%;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+.p2{
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.part2 button,
+.part3 button,
+.part4 button{
+    background: url(../images/Shape_bu.png) no-repeat;
+    background-size:100% 100% ;
+    width: 15%;
+    height: 3%;
+    margin: 3% 0 3% 40%;
+    box-shadow:none;
+    border: none;
+}
+
+.part2 .dots,
+.part3 .dots,
+.part4 .dots,
+.part5 .dots{
+    display: block;
+}
+.part2 .dots.on,
+.part3 .dots.on,
+.part4 .dots.on,
+.part5 .dots.on{
+    display:none;
+}
+.part2 .read.on,
+.part3 .read.on,
+.part4 .read.on,
+.part5 .read.on{
+    display: block;
+}
+.part2 .read,
+.part3 .read,
+.part4 .read,
+.part5 .read{
+    display: none;
+}
+.image > img{
+    width: 40%;
+    margin: 30px;
+}
+.part2::after{
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: url(../images/Luca.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+.part3{
+    background: url(../images/luca_06.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    position: relative;
+    padding: 3%;
+}
+.part3 .Alberto{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: left;
+}
+.part3 .Alberto p{
+    padding: 0 20%;
+    word-break: keep-all;
+}
+.part3::after{
+    content: "";
+    width: 46%;
+    height: 100%;
+    background: url(../images/Alberto.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 8%;
+    right: 0%;
+}
+.part4{
+    background: url(../images/luca_07.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    position: relative;
+    padding: 3%;
+}
+.part4 .Giulia{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: right;
+}
+.part4 .Giulia p{
+    padding: 0 20%;
+    word-break: keep-all;
+}
+.part4::after{
+    content: "";
+    width: 43%;
+    height: 100%;
+    background: url(../images/Gilulia.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 16.4%;
+    left: 0px;
+}
+
+.part5{
+    background: url(../images/luca_08.png)no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    padding: 3%;
+}
+.part5 h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing:10px;
+    padding: 0 0 2% 10%;
+    margin-bottom: 2%;
+ }
+.part5 .sw1 .p5{
+    text-align: center;
+    background: url(../images/Shape_ch.png) no-repeat;
+    background-size: auto 100%;
+}
+.part5 .swiper-container {
+   width: 80%;
+   height: 85%;
+ }
+.part5 .sw1 .swiper-wrapper .p5 .tBox div > h4{
+    font-size: 25px;
+    padding:2%
+}
+.part5 .sw1 .swiper-wrapper .p5 .tBox div > p{
+    padding: 3% 5%;
+    letter-spacing:2px;
+    font-size: 15px;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch1{
+    background: url(../images/Machiavelli.png) no-repeat;
+    background-position: -40px 70px;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch2{
+    background: url(../images/Massimo.png) no-repeat;
+    background-position: -35px 11px;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch3{
+    background: url(../images/Grandma.png) no-repeat;
+    background-size: auto 100% ;
+    background-position: 0px 43px;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch4{
+    background: url(../images/Ercole.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 85px 0;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch5{
+    background: url(../images/Daniela.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 30px 0;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch6{
+    background: url(../images/Lorenzo.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 0px 0;
+    height: 55%;
+}
+.part5 .sw1 .swiper-wrapper .p5 .ch7{
+    background: url(../images/Uncle.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 18px 95px;
+    height: 55%;
+}
+.part5 .sw1 .p5 .tBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 43%;
+}
+.part5 .sw1 .p5 .tBox button{
+    background: none;
+    text-align: right ;
+    font-size:18px;
+    padding: 2%;
+    margin-right: 5%;
+    position: relative;
+    
+}
+.part5 .sw1 .p5 .tBox button::after{
+    content: "";
+    width: 115px;
+    height: 20px;
+    background: url(../images/buttonimg.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #fff;
+}
+.container{
+    background: url(../images/luca_09.png) no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.container .Box{
+    display: flex;
+    justify-content: space-around;
+}
+.part6{
+    height: 85%;
+    width: 60%;
+}
+
+.part6 .S1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.part6 .S1 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+.part6 h2{
+        font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding: 0% 3% 5% 10%;
+ }
+.part6 h5{
+    font-size: 25px;
+    letter-spacing:3px;
+    padding: 1% 2%;
+ }
+.part6 h6{
+     font-size: 18px;
+     letter-spacing: 2px;
+     padding: 2% 3%;
+     /* margin: 3% 0; */
+ }
+.part6 p{
+     font-size: 13px;
+     letter-spacing: 2px;
+     padding: 2% 3%;
+ }
+ .part6 .S2 .p6-1,
+ .part6 .S2 .p6-2,
+ .part6 .S2 .p6-3{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 0 50px;
+ }
+.part6 .S2 .p6-1 .pt6-1{
+    background: url(../images/w_01.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .p6-2 .pt6-2{
+    background: url(../images/w_02.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .p6-3 .pt6-3{
+    background: url(../images/w_03.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .t_Box{
+    width: 60%;
+    padding: 2%;
+}
+.part6 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 15px;
+    margin-top: 1%;
+}
+.part6 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 15px;
+    margin-top: 1%;
+}
+.part7{
+    height: 900px;
+    width: 35%;
+}
+.part7 h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding: 0% 3% 7% 10%;
+}
+.Gs1 {
+    width: 100%;
+    height: 80%;
+    padding: 0 20%;
+}
+.Gs1 .swiper-slide {
+    opacity: 0.5;
+}
+.Gs1 .swiper-slide.swiper-slide-active {
+    transition: transform 0.4s;
+    opacity: 1;
+}
+
+.part7 .Gs1 .g1{
+    background: url(../images/g1.jpg) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g2{
+    background: url(../images/g2.JPG) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g3{
+    background: url(../images/g3.JPG) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g4{
+    background: url(../images/g4.JPG) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g5{
+    background: url(../images/g5.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g6{
+    background: url(../images/g16.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g7{
+    background: url(../images/g7.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g8{
+    background: url(../images/g8.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g9{
+    background: url(../images/g9.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g10{
+    background: url(../images/g10.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g11{
+    background: url(../images/g11.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g12{
+    background: url(../images/g12.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g13{
+    background: url(../images/g13.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g14{
+    background: url(../images/g14.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g15{
+    background: url(../images/g15.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g16{
+    background: url(../images/g16.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g17{
+    background: url(../images/g17.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g18{
+    background: url(../images/g18.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g19{
+    background: url(../images/g19.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g20{
+    background: url(../images/g20.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g21{
+    background: url(../images/g21.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g22{
+    background: url(../images/g22.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g23{
+    background: url(../images/g23.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g24{
+    background: url(../images/g24.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+.part7 .Gs1 .g25{
+    background: url(../images/g25.jpg) no-repeat;
+    background-position: 0 0px;
+    background-size: 100% auto;
+}
+
+.container  footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container  footer div>p{
+    font-size: 12px;
+    padding: 5px;
+}
+.container  footer div:first-child{
+    display: flex;
+    justify-content: center;
+}
+.container  footer div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.container  footer div:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
