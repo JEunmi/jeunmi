@@ -61,28 +61,28 @@ p{
     margin: 10px 0;
 }
 .cross_browing .chrome{
-    background: url(../images/chrome.png) no-repeat;
+    background: url(images/chrome.png) no-repeat;
     background-size: 100% auto;
     width: 35px;
     height: 35px;
     margin-right: 20px;
 }
 .cross_browing .edge{
-    background: url(../images/edge.png) no-repeat;
+    background: url(images/edge.png) no-repeat;
     background-size: 100% auto;
     width: 35px;
     height: 35px;
     margin-right: 20px;
 }
 .cross_browing .fire_fox{
-    background: url(../images/Firefox.png) no-repeat;
+    background: url(images/Firefox.png) no-repeat;
     background-size: 100% auto;
     width: 35px;
     height: 35px;
     margin-right: 20px;
 }
 .cross_browing .ie{
-    background: url(../images/ie.png) no-repeat;
+    background: url(images/ie.png) no-repeat;
     background-size: 100% auto;
     width: 35px;
     height: 35px;
@@ -127,7 +127,7 @@ p{
 h1 {
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-image: url(../images/watercolor.jpg);
+    background-image: url(images/watercolor.jpg);
     /* background-position: 0px 20%; */
     background-position: -72px 40%;
     background-size: 100% auto;
