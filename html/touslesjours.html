@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>touslesjours</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" />  -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/touslesjours.css">
     <link rel="stylesheet" media="all and (max-width: 1024px)" href="../css/t_touslesjours.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/m_touslesjours.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -72,21 +73,23 @@
         </div>
         <div class="h1">
             <h1 data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="700"> <span>좋은 재료</span>로 만들어 건강하고, 매장에서 갓 구워</h1>
-            <h1 data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="700" data-aos-delay="1000"><span>신선한 빵</span>과 <span>케이크</span>를 만날 수 있는 곳.</h1>
-            <h1 data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="700" data-aos-delay="1700">여기는<span>뚜레쥬르</span>입니다. </h1>
+            <h1 data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="700" data-aos-delay="700"><span>신선한 빵</span>과 <span>케이크</span>를 만날 수 있는 곳.</h1>
+            <h1 data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="700" data-aos-delay="1400">여기는<span>뚜레쥬르</span>입니다. </h1>
         </div>
     </header>
+
+
     <section class="part1">
         <div class="group">
             <h2 data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="1000">About Our brand story</h2>
             <div class="container1">
                 <div class="p1-1">
-                    <div class="p11" data-aos="fade-down-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-delay="700"></div>
-                    <div class="p12" data-aos="fade-down-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-delay="900"></div>
-                    <div class="p13" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-delay="1100"></div>
-                    <div class="p14" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" data-aos-delay="1300"></div>
+                    <div class="p11" data-aos="fade-down-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="300"></div>
+                    <div class="p12" data-aos="fade-down-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="500"></div>
+                    <div class="p13" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="700"></div>
+                    <div class="p14" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="900"></div>
                 </div>
-                <div class="p1-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="bottom-bottom">
+                <div class="p1-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200" data-aos-anchor-placement="bottom-bottom">
                     <h3>건강한 데일리 베이커리</h3>
                     <p>건강하지만 맛있어야,<br> 맛있지만 건강하게,<br> 매일 먹을 수 있다는 평범한 원칙으로부터<br> 뚜레쥬르의 오늘은 시작됩니다.</p>
                     <a href="../html/touslesjours_sub.html">learn more</a>
@@ -106,7 +109,8 @@
                 <li data-id="con5">etc</li>
             </ul>
             <div id="con1" class="conBox on">
-                    <div class="swiper-wrapper np2">
+                <div class="swiper swiper-container newproduct2 np2">
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="c1box c1">
                                 <img src="../images/creambbang.jpg" alt="밀키스 퐁당 크림빵">
@@ -114,7 +118,7 @@
                                     <h4>밀키스 퐁당 크림빵</h4>
                                     <p class="p">달콤한 밀키스 글레이즈와 겉은 바삭, 속은 부드러운 빵 속 바닐라 우유크림이 어우러지는 제품 </p>
                                     <table>
-                                        <tr>영양성분</tr>
+                                        <tr>영양 성분</tr>
                                         <tr>
                                             <th>총중량(g)</th>
                                             <td>92</td>
@@ -390,7 +394,11 @@
                         </div>
 
                     </div>
-                    <div class="swiper-wrapper np1">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper swiper-container newproduct1 np1">
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="../images/creambbang.jpg" alt="밀키스 퐁당 크림빵">
                         </div>
@@ -413,6 +421,7 @@
                             <img src="../images/mbin.jpg" alt="밀키스 우유식빵맛 아이스캔디">
                         </div>
                     </div>
+                </div>
 
             </div>
             <div id="con2" class="conBox cb">
@@ -422,9 +431,9 @@
                     <li data-id="con2-3">조리빵</li>
                     <li data-id="con2-4">도넛</li>
                 </ul>
-                <div class="container_">
                 <div id="con2-1" class="conBox on">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/honey.jpg" alt="고르곤졸라 허니볼">
@@ -709,7 +718,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/honey.jpg" alt="고르곤졸라 허니볼">
                             </div>
@@ -732,12 +745,14 @@
                                 <img src="../images/hodu.jpg" alt="통밀 호두 식빵">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con2-2" class="conBox">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-1 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/gogupie.jpg" alt="진짜 고구마 파이">
+                                    <img src="../images/gogupie.png" alt="진짜 고구마 파이">
                                     <div class="tbox">
                                         <h4>진짜 고구마파이</h4>
                                         <p class="p">바삭한 파이 속 진짜 고구마 다이스가 들어간 앙금을 가득 채우고, 바닥까지 달콤하고 맛있게 즐길 수 있는 제품</p>
@@ -1019,7 +1034,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-1 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/gogupie.png" alt="진짜 고구마파이">
                             </div>
@@ -1042,9 +1061,11 @@
                                 <img src="../images/egg.jpeg" alt="에그톡톡데니쉬">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con2-3" class="conBox">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-2 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/pa.jpeg" alt="치즈 듬뿍 대파불고기빵">
@@ -1329,7 +1350,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-2 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/pa.jpeg" alt="치즈 듬뿍 대파불고기빵">
                             </div>
@@ -1352,9 +1377,11 @@
                                 <img src="../images/amond.jpeg" alt="아몬드보스톡">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con2-4" class="conBox">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-3 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/donut.jpeg" alt="옛날 꽈배기 도넛">
@@ -1639,7 +1666,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-3 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/donut.jpeg" alt="옛날 꽈배기 도넛">
                             </div>
@@ -1662,7 +1693,7 @@
                                 <img src="../images/sara.jpeg" alt="추억의 사라다 고로케">
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
 
@@ -1673,7 +1704,8 @@
                     <li data-id="con3-3">스페셜 케이크</li>
                 </ul>
                 <div id="con3-1" class="conBox on">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-4 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/wooucake.jpeg" alt="순진우유 퐁당 바닐라">
@@ -1958,7 +1990,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-4 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/wooucake.jpeg" alt="순진우유 퐁당 바닐라">
                             </div>
@@ -1981,9 +2017,11 @@
                                 <img src="../images/greentea.jpeg" alt="그린티 생크림쉬폰 2호">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con3-2" class="conBox ">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-5 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/chicake.jpeg" alt="클래식치즈케이크3호">
@@ -2229,7 +2267,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/shyin.png" alt="썬샤인 머스켓">
+                                    <img src="../images/shyin.jpeg" alt="썬샤인 머스켓">
                                     <div class="tbox">
                                         <h4>썬샤인 머스켓</h4>
                                         <p class="p">상큼한 라임을 넣은 새콤달콤 샤인머스캣무스와 톡톡 씹히는 나타드코코가 들어간 무스케이크</p>
@@ -2268,7 +2306,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-5 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/chicake.jpeg" alt="클래식치즈케이크3호">
                             </div>
@@ -2288,15 +2330,17 @@
                                 <img src="../images/soonwooud.jpeg" alt="순우유딸기무스">
                             </div>
                             <div class="swiper-slide">
-                                <img src="../images/shyin.png" alt="썬샤인 머스켓">
+                                <img src="../images/shyin.jpeg" alt="썬샤인 머스켓">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con3-3" class="conBox ">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-6 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/poo.jpg" alt="곰돌이 푸_메이플허니&초코생크림">
+                                    <img src="../images/poo.jpeg" alt="곰돌이 푸_메이플허니&초코생크림">
                                     <div class="tbox">
                                         <h4>곰돌이 푸 메이플허니&초코생크림</h4>
                                         <p class="p">초코&화이트시트 사이 달콤한 꿀이 더해진 메이플생크림과 식감 좋은 초콜릿코팅 피칸을 샌드한 풍미 가득 생크림 케이크</p>
@@ -2377,7 +2421,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/blueberry.jpg" alt="블루베리 라벤더 케이크">
+                                    <img src="../images/blueberry.jpeg" alt="블루베리 라벤더 케이크">
                                     <div class="tbox">
                                         <h4>블루베리 라벤더 케이크</h4>
                                         <p class="p">새콤달콤한 블루베리 크림과 산뜻한 라벤더티를 블루베리 가나슈와 함께 샌드한 케이크</p>
@@ -2578,7 +2622,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-6 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/poo.jpeg" alt="곰돌이 푸_메이플허니&초코생크림">
                             </div>
@@ -2586,7 +2634,7 @@
                                 <img src="../images/olaf.jpeg" alt="올라프 바닐라마저 달고나">
                             </div>
                             <div class="swiper-slide">
-                                <img src="../images/blueberry.jpg" alt="블루베리 라벤더 케이크">
+                                <img src="../images/blueberry.jpeg" alt="블루베리 라벤더 케이크">
                             </div>
                             <div class="swiper-slide">
                                 <img src="../images/so.jpeg" alt="우유카라멜이 즐겁소">
@@ -2601,6 +2649,7 @@
                                 <img src="../images/tiras.jpeg" alt="떠먹는 쁘띠 티라미수">
                             </div>
                         </div>
+                    </div>
                 </div>
 
             </div>
@@ -2611,10 +2660,11 @@
                     <li data-id="con4-2">샐러드</li>
                 </ul>
                 <div id="con4-1" class="conBox on">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-7 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/red.jpg" alt="통밀레드치킨샌드위치">
+                                    <img src="../images/red.png" alt="통밀레드치킨샌드위치">
                                     <div class="tbox">
                                         <h4>통밀레드치킨샌드위치</h4>
                                         <p class="p">매콤한 감칠맛의 타코치킨과 담백한 치아바타, 치즈가 어우러진 샌드위치</p>
@@ -2654,7 +2704,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/hotchi.jpg" alt="핫치킨치아바타">
+                                    <img src="../images/hotchi.png" alt="핫치킨치아바타">
                                     <div class="tbox">
                                         <h4>핫치킨치아바타</h4>
                                         <p class="p">매콤한 감칠맛의 타코치킨과 담백한 치아바타, 치즈가 어우러진 샌드위치</p>
@@ -2895,12 +2945,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-7 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../images/red.jpg" alt="통밀레드치킨샌드위치">
+                                <img src="../images/red.png" alt="통밀레드치킨샌드위치">
                             </div>
                             <div class="swiper-slide">
-                                <img src="../images/hotchi.jpg" alt="핫치킨치아바타">
+                                <img src="../images/hotchi.png" alt="핫치킨치아바타">
                             </div>
                             <div class="swiper-slide">
                                 <img src="../images/ocksu.jpeg" alt="옥수수 치즈토스트">
@@ -2918,9 +2972,11 @@
                                 <img src="../images/lap.jpeg" alt="싱그러운 치킨텐더 그린 랩">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con4-2" class="conBox ">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-8 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/taco.png" alt="치킨타코나쵸샐러드">
@@ -3204,7 +3260,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-8 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/taco.png" alt="치킨타코나쵸샐러드">
                             </div>
@@ -3227,6 +3287,7 @@
                                 <img src="../images/tomato.jpeg" alt="토마토치킨샐러드">
                             </div>
                         </div>
+                    </div>
                 </div>
 
             </div>
@@ -3238,10 +3299,11 @@
                     <li data-id="con5-2">음료</li>
                 </ul>
                 <div id="con5-1" class="conBox on">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-9 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/chococookie.jpg" alt="리얼 초코칩 쿠키">
+                                    <img src="../images/chococookie.jpeg" alt="리얼 초코칩 쿠키">
                                     <div class="tbox">
                                         <h4>리얼 초코칩 쿠키</h4>
                                         <p class="p">초콜릿 청크를 가득 넣어 달콤, 쫀득, 촉촉한 초코칩 쿠키</p>
@@ -3483,7 +3545,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="c1box">
-                                    <img src="../images/mard.jpg" alt="휭거마드레느">
+                                    <img src="../images/mard.jpeg" alt="휭거마드레느">
                                     <div class="tbox">
                                         <h4>휭거마드레느</h4>
                                         <p class="p">촉촉하고 부드러워 아이들의 간식으로 사랑받는 미니케익</p>
@@ -3522,9 +3584,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-9 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../images/chococookie.jpg" alt="리얼 초코칩 쿠키">
+                                <img src="../images/chococookie.jpeg" alt="리얼 초코칩 쿠키">
                             </div>
                             <div class="swiper-slide">
                                 <img src="../images/brawoni.jpeg" alt="리얼브라우니">
@@ -3542,12 +3608,14 @@
                                 <img src="../images/cheeset.jpeg" alt="크림치즈타르트">
                             </div>
                             <div class="swiper-slide">
-                                <img src="../images/mard.jpg" alt="휭거마드레느">
+                                <img src="../images/mard.jpeg" alt="휭거마드레느">
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="con5-2" class="conBox">
-                        <div class="swiper-wrapper np2">
+                    <div class="swiper swiper-container product2-10 np2">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="c1box">
                                     <img src="../images/dsheak.jpeg" alt="사르르딸기쉐이크">
@@ -3831,7 +3899,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper np1">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper swiper-container product1-10 np1">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../images/dsheak.jpeg" alt="사르르딸기쉐이크">
                             </div>
@@ -3854,10 +3926,10 @@
                                 <img src="../images/mandobing.jpeg" alt="치즈품은애플망고빙수[얼음]">
                             </div>
                         </div>
+                    </div>
                 </div>
 
             </div>
-       
         </div>
     </section>
     <section class="part3 group">
@@ -3876,7 +3948,8 @@
                 </div>
             </div>
             <div class="p3">
-                    <div class="swiper-wrapper c1">
+                <div class="swiper swiper-container c1">
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="../images/milkis.jpg" alt="배너1">
                         </div>
@@ -3899,6 +3972,8 @@
                             <img src="../images/banner5.jpg" alt="배너7">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="button">
                 <a href="#">
@@ -3967,10 +4042,10 @@
         </div>
 
     </footer>
-    <script src="../js/ie-checker.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script> -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/touslesjours_js.js"></script>
 </body>

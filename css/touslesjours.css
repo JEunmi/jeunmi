@@ -1,10 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-/* 'Nanum Pen Script', cursive */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-/* 'Noto Sans KR', sans-serif */
-@import url('../css/touslesjours(ie).css');
-
 * {
     margin: 0;
     padding: 0;
@@ -216,6 +210,7 @@ header .menu_inner .group .submenu > li:hover> a{
 }
 
 /* part2 products*/
+
 .part2{
     display: flex;
     flex-direction: column;
@@ -223,12 +218,12 @@ header .menu_inner .group .submenu > li:hover> a{
     text-align: center;
     margin-bottom: 50px;
     height: 1000px;
-    margin: 5% 0 1% 0;
+    margin: 10% 0 1% 0;
 }
 .part2 h2{
     font-size: 30px;
     color: #003638;
-    margin: 3% 0;
+    margin: 5% 0;
 }
 .part2 .tab{
     width: 1300px;
@@ -241,7 +236,7 @@ header .menu_inner .group .submenu > li:hover> a{
     background: url(../images/tafter.png)no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    top: 21%;
+    top: 20%;
     right: -24%;
     z-index: -2;
 }
@@ -287,41 +282,42 @@ header .menu_inner .group .submenu > li:hover> a{
 .part2 .tab .conBox{
     display: none;
 }
-/* .part2 .tab .cb{
-    display: flex;
-    flex-direction: column;
-} */
 .part2 .tab .conBox.on{
     display: block;
 }
 
-.part2 .tab .c1box{
+.part2 .tab .swiper-container .c1box{
     display:flex;
     justify-content: space-evenly;
     width: 100%;
 }
-.part2 .tab .c1box.c1 > img{
-    height: 80%;
-    margin-top: 8%;
+.part2 .tab .swiper-container .c1box.c1::after{
+    width: 430px;
+    height: 430px;
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 11%;
+    left: 15%;
+    z-index: 1;
 }
-.part2 .tab .c1box > img{
-    height: 80%;
-    margin-top: 4%;
+.part2 .tab .swiper-container .c1box::after{
+    width: 450px;
+    height: 450px;
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: -9%;
+    left: 14%;
+    z-index: 1;
 }
-.part2 .np1{
-    width: 50%;
-    margin-left: 23%;
-}
-.part2 .np1 .swiper-slide img{
-    width: 70%;
-}
-.part2 .tab .c1box .tbox{
+.part2 .tab .swiper-container .c1box .tbox{
     width: 500px;
     color: #fff;
     margin-left: 2%;
     position: relative;
 }
-.part2 .tab .c1box .conBox .tbox::after{
+.part2 .tab .swiper-container .c1box .tbox::after{
     content: "";
     width: 483px;
     height: 500px;
@@ -331,9 +327,19 @@ header .menu_inner .group .submenu > li:hover> a{
     right: 0;
     z-index: -1;
 }
-.part2 .tab .c1box .conBox .tbox.t1{
+.part2 .tab .swiper-container .c1box .tbox.t1{
     background: none;
     position: relative;
+}
+.part2 .tab .swiper-container .c1box .tbox.t1::after{
+    content: "";
+    width: 483px;
+    height: 500px;
+    background: #003638;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: -1;
 }
 .part2 .tab>ul>li.on{
     position: relative;
@@ -360,7 +366,7 @@ header .menu_inner .group .submenu > li:hover> a{
     font-size: 24px;
     margin: 12% 0 8%;
 }
-.part2 .tab .c1box .tbox .p{
+.part2 .tab .swiper-container .c1box .tbox .p{
    padding: 0 15%;
     word-break: keep-all; 
     margin-bottom: 6%;
@@ -388,17 +394,12 @@ header .menu_inner .group .submenu > li:hover> a{
 .part2 .cb{
     position: relative;
 }
-.part2 #con2 > ul,
-.part2 #con3 > ul,
-.part2 #con4 > ul,
-.part2 #con5 > ul{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 0%;
-    margin-top: 27px;
-    position: relative;
-    z-index: 100;
+.part2 #con2 > ul{
+display: flex;
+width: 550px;
+float: right;
+margin-right: 2%;
+margin-top: 4.2%;
 }
 .part2 .cb > ul{
     display: flex;
@@ -417,6 +418,79 @@ header .menu_inner .group .submenu > li:hover> a{
     color: #fff;
     transition: all 0.4s ease-out;
 }
+:is(.newproduct1, .product1, .product1-1 ,.product1-2,.product1-3,.product1-4,.product1-5
+,.product1-5,.product1-6,.product1-7,.product1-8,.product1-9,.product1-10) .swiper-slide{
+    opacity: 0.5;
+}
+:is(.newproduct1, .product1, .product1-1 ,.product1-2,.product1-3,.product1-4,.product1-5
+,.product1-5,.product1-6,.product1-7,.product1-8,.product1-9,.product1-10) .swiper-slide.swiper-slide-active {
+    transition: transform 0.4s;
+    opacity: 1;
+}  
+
+/* slide */
+
+.np2 .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .conBox.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conBox .swiper-slide .c1box.c1 img {
+    display: block;
+    width: 25%;
+    height: 55%;
+    margin-top: 9%;
+    position: relative;
+    z-index: 2;
+    margin-left: 11%;
+  
+  }
+  .conBox .swiper-slide .c1box img {
+    display: block;
+    width: 25%;
+    height: 55%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 2;
+    margin-left: 12%;
+  }
+  .conBox .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .np2 {
+    height: 100%;
+    width: 100%;
+  }
+  .np1{
+    width: 40%;
+    margin-top: 2%;
+    cursor: pointer;
+  }
+  .np1 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .np1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  .part2 .swiper-button-next,
+  .part2 .swiper-button-prev{
+    color: #f26a25;
+  }
 
 /* part3 Community */ 
 
@@ -442,7 +516,7 @@ header .menu_inner .group .submenu > li:hover> a{
     font-size: 30px;
     color: #003638;
     text-align: center;
-    margin: 5% 0;
+    margin: 15% 0 5%;
 }
 .part3 h3{
     font-size: 28px;
@@ -523,7 +597,7 @@ header .menu_inner .group .submenu > li:hover> a{
 
 .part4{
     background: url(../images/mainbgf.png) no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     width: 100%;
     height: 400px;
     margin-top: 5%;

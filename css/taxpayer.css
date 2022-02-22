@@ -243,23 +243,41 @@ header .submenu{
 .part1{
     height: 495px;
     background: #E7E5E5;
-    
+    background: #F6F6F6;
+    position: relative;
+}
+
+.part1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../images/v1.png) no-repeat;
+    background-size: 105% auto;
+    background-position: -65% -10%;
+    width: 100%;
+    height: 495px;
 }
 .part1 .main_visual{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     height: 300px;
     font-size: 15px;
 }
 .part1 .main_visual .main_textbox{
-    margin-left: 20%;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 .part1 .main_visual h1{
     font-size: 25px;
     margin: 2% 0;
+    /* color: #fff; */
 }
+/* .part1 .main_visual p{
+    color: #fff;
+} */
 .part1 .main_visual h1 span{
     color: #112D4E;
     font-size: 30px;
@@ -296,7 +314,7 @@ header .submenu{
 }
 .part1 .main_button::after{
     content: "";
-    background: #F6F6F6;
+    background: #e9eef5;
     width: 55%;
     height: 110%;
     position: absolute;
@@ -584,10 +602,23 @@ h3{
 }
 /* part3 */
 .part3{
-    background: #112d4e;
+    /* background: #112d4e; */
+    background: url(../images/p3_b.jpeg)no-repeat;
+    background-size: 100% auto;
+    background-position: 3% 0;
     height: 320px;
     margin-top: 5%;
+    position: relative;
 }
+/* .part3::after{
+    content: "";
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3 );
+} */
 .part3 h3{
     color: #fff;
 }
@@ -757,7 +788,7 @@ h3{
 /* part4 */
 
 .part4{
-    padding: 5% 0;
+    padding: 3% 0 5% 0;
     text-align: center;
     background: #f6f6f6;
 }
@@ -942,7 +973,10 @@ h3{
 /* part5 */
 .part5{
     padding-bottom: 5%;
-    background: #f6f6f6;
+    /* background: #f6f6f6; */
+    background: url(../images/pattern2.svg) no-repeat;
+    background-size: 180% auto;
+    background-position: 54% 54%;
 }
 .part5 .p5{
     display: flex;
