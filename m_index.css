@@ -1,0 +1,180 @@
+body{
+    min-width: 320px;
+}
+*{
+    font-size: 12px;
+}
+h2{
+    margin: 5vh 0;
+}
+.text_box {
+    width: 100%;
+    padding: 5vh 0;
+}
+.section .screen {
+    width: 90%;
+}
+.s1 > .text_box{
+    display: block;
+}
+.s1{
+    display: flex;
+    flex-direction: column-reverse; 
+    justify-content: center
+}
+.swiper-slide p {
+    padding-right: 0%;
+}
+.swiper-slide:nth-child(2), .swiper-slide:nth-child(3) {
+    padding-top: 10vh;
+}
+.part2 > div:first-child,
+.part3 > div:first-child,
+.part4 > div:first-child{
+    display: none;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: unset;
+    width: 7vw;
+    bottom: 5%;
+}
+.swiper-button-prev {
+    left: 35%;
+}
+.swiper-button-next{
+    right: 35%;
+}
+/* part1 */
+.part1 div:first-child p{
+    margin: 5vh 0;
+}
+.part1 div:first-child span {
+    margin-top: 10vh;
+
+}
+/* part2 */
+.part2{
+    flex-direction: column;
+    height: 100vh;
+}
+.part2 .text_box>.logo {
+    display: none;
+}
+.part2 .screen .s_box {
+    height: 0;
+    padding-top: calc(461/918*100%);
+}
+.part2 .middle .logo_box {
+    flex-direction: column;
+}
+.part2 .middle .logo_box {
+    height: 15vh;
+}
+.part2 .middle .logo_box div:nth-child(1),
+.part2 .middle .logo_box div:nth-child(2) {
+    width: 80%;
+    height: 0;
+    padding-top: calc(41/300*100%);
+}
+.part2 .right .color {
+    justify-content: space-around;
+}
+.part2 .right .color>div {
+    width: 20%;
+}
+
+.part2 .right div:last-child .p:hover>div {
+    top: -100%;
+}
+.part2 .right div:last-child .m:hover>div {
+    top: calc(3700/1920* -100%);
+}
+.part2 .right div:last-child .p>div,
+.part2 .right div:last-child .m>div {
+    transition: all 2s;
+}
+.part2 .right div:last-child .p,
+.part2 .right div:last-child .m{
+    height: 30vh;
+}
+.part2 .right>div:last-child {
+    margin-top: 10vh;
+}
+/* part3 */
+.part3 .screen .s_box {
+    height: 0;
+    padding-top: calc(471/946*100%);
+}
+.part3 .text_box>.logo {
+    display: none;
+}
+.part3 .right .color {
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    /* padding: 0 10vh; */
+}
+.part3 .right .color>div {
+    flex-basis: 20%;
+}
+.part3 .right .color div:nth-child(2n-1) {
+    top: 0vh;
+}
+
+.part3 .right .color div:nth-child(2n-1) p::after {
+    margin-top: 0vh;
+}
+
+.part3 .right .color div:nth-child(2n) {
+    top: 0vh;
+}
+
+.part3 .right .color div:nth-child(2n) p::after {
+    margin-bottom: 0vh;
+}
+.part3 .right div:last-child .p,
+.part3 .right div:last-child .m{
+    height: 30vh;
+}
+.part3 .right>div:last-child {
+    margin-top: 10vh;
+}
+/* part4 */
+.part4 .screen .s_box {
+    height: 0;
+    padding-top: calc(500/999*100%);
+}
+.part4 .text_box>.logo {
+    display: none;
+}
+.part4 .middle .logo_box div {
+    padding-top: calc(38/159 * 100%);
+    width: 70%;
+    height: 0;
+}
+.part4 .right .color {
+    justify-content: center;
+    margin-top: 5vh;
+}
+.part4 .right .color>div {
+    width: 20%;
+}
+.part4 .right div:last-child .p,
+.part4 .right div:last-child .m {
+    height: 30vh;
+}
+.part4 .right div:last-child .p,
+.part4 .right div:last-child .m{
+    height: 30vh;
+}
+.part4 .right>div:last-child {
+    margin-top: 10vh;
+}
+
+/* part5 */
+.part5 p{
+    word-break: keep-all;
+    padding: 0 5vh;
+}

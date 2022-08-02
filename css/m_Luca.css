@@ -1,0 +1,294 @@
+body{
+    min-width: 320px;
+}
+*{
+    font-size: 12px;
+}
+#nav ul{
+    width: 95%;
+    padding: 3% 0;
+}
+#nav ul li{
+    width: 20%;
+}
+/* part1 */
+.part1{
+    background-size: auto 110%;
+}
+.part1 .p1 .cha{
+    display: none;
+}
+.part1 .p1 > div:last-child{
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.part1 .p1 .logo{
+    margin: 0 auto;
+    background-size:100%;
+}
+.part1 .p1 p{
+    padding: 5%;
+}
+.part1 .scroll span{
+    bottom: 10%;
+}
+
+/* part2 */
+.part2{
+    padding: 10vh 0;
+}
+.part2 p{
+    padding: 0 5%;
+}
+.part2 .tab1{
+    flex-direction: column;
+}
+.part2 .tab1 > ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.part2 .tab1 > ul li{
+    padding: 0;
+}
+.part2 .tab1 .conBox .tab2 .p2_box p{
+    padding: 0;
+}
+.part2 .tab1 .content{
+    width: 100%;
+    margin: 0;
+}
+.part2 .tab1 .conBox .tab2 .p2_box p{
+    margin: 15% 0;
+}
+/* part3 */
+.part3 .cha{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.part3 ul{
+    width: 50%;
+    margin: 5vh 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.part3 li{
+    flex-basis: 20%;
+    padding-top: 20%;
+    margin: 0 2%;
+}
+.part3 li.on,
+.part3 li:hover{
+    padding-top: 20%;
+}
+.part3 .text p{
+    padding: 0 5% ;
+}
+.part3 .cha .content .main > div{
+    flex-direction: column;
+    padding-top: 10vh;
+}
+.part3 .cha .content .main > div > div:last-child{
+    width: 90%;
+    margin: 0 5%;
+}
+.part3 .cha .content .main > div >div{
+    height: auto;
+    flex-direction: row;
+    align-items: center
+}
+.part3 .cha .content .main:nth-child(1) .img{
+    background: url(../image/luca_ch1_m.png)no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 50%;
+    height: 30vh;
+    margin-left: 5%;
+}
+.part3 .cha .content .main:nth-child(1) h2{
+    width: 35%;
+    margin-right: 5%;
+}
+.part3 .cha .content .main:nth-child(2) .img{
+    background: url(../image/luca_ch2_m.png)no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 50%;
+    height: 30vh;
+    margin-left: 5%;
+}
+.part3 .cha .content .Box:nth-child(2) {
+    background-position: left;
+}
+.part3 .cha .content .main:nth-child(2) h2{
+    margin-right: 5%;
+}
+.part3 .cha .content .main:nth-child(3) .img{
+    background: url(../image/luca_ch3_m.png)no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 50%;
+    height: 30vh;
+    margin-left: 5%;
+}
+.part3 .cha .content .Box:nth-child(3) {
+    background-size: auto 110%;
+}
+.part3 .cha .content .main:nth-child(3) h2{
+    margin-right: 5%;
+}
+.part3 h2{
+    width: 40%;
+    font-size: 2rem;
+}
+.part3 .cha .content .main .img_box{
+    display: none;
+}
+.part3 .cha .content .main .text{
+    width: 100%;
+    flex-wrap: wrap;
+} 
+.part3 .cha .content .main#chr2 > div{
+    padding-top: 10vh;
+}
+.part3 .cha .content .other > div{
+    display: block;
+    margin: 0 5%;
+}
+.part3 .cha li:nth-child(5),
+.part3 .cha li:nth-child(6),
+.part3 .cha li:nth-child(7),
+.part3 #chr4 .top,
+.part3 #chr4 .bottom,
+.part3 #chr5,
+.part3 #chr6,
+.part3 #chr7{
+    display: none;
+}
+.part3 .cha .content .other .text {
+    height: 65vh;
+    height: 70vh;
+    margin: 0;
+    margin-top: 5vh;
+}
+.part3 #chr4 .mobile{
+    display: block;
+}
+.part3 .mobile .text:nth-child(1) .img{
+    background: url(../image/luca_ch4_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(2) .img{
+    background: url(../image/luca_ch5_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(3) .img{
+    background: url(../image/luca_ch6_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(4) .img{
+    background: url(../image/luca_ch7_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(5) .img{
+    background: url(../image/luca_ch8_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(6) .img{
+    background: url(../image/luca_ch9_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(7) .img{
+    background: url(../image/luca_ch10.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .mobile .text:nth-child(8) .img{
+    background: url(../image/luca_ch11_m.png) no-repeat;
+    background-size:auto 100% ;
+    background-position: center;
+}
+.part3 .cha .content .other .img {
+     /* width: 60%;
+   height: 0;
+    padding-top:calc(206/300*100%); */
+    width: 50%;
+    height: 30vh;
+    margin: 0 20%;
+}
+.part3 .cha .content .other h2{
+    width: 100%;
+}
+.part3 {
+    --swiper-theme-color: #fff;
+}
+/* part4 */
+.part4{
+    flex-direction: column;
+}
+.part4 h2{
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 7vh;
+}
+.part4 .w_box{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.part4 .w_box > .w_t {
+    padding: 2vh 5vh;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.part4 .w_box > .w_t,
+.part4 .w_box > .w_t.on{
+    width: 90%;
+    margin: 0 5% 2vh 5%;
+    transition: all 0.5s;
+}
+.part4 .w_box > .w_t h3{
+    writing-mode: unset;
+    text-orientation: unset;
+    padding: 0;
+}
+/* part5 */
+.part5 h2{
+    margin-top: 10vh;
+}
+.part5 .swiper{
+    width: 90%;
+    height: 65vh;
+}
+.part5 .gallery .swiper-slide {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+.part5 .gallery .swiper-slide-active{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.part5 .swiper-pagination{
+    display: none;
+}
+/* footer */
+footer{
+    height: auto;
+    padding: 5%;
+    margin: 0;
+}
+footer p{
+    text-align: center;
+}
+footer > div{
+    display: none;
+}
+footer > div:last-child{
+    display: block;
+}
