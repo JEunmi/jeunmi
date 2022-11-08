@@ -1,0 +1,824 @@
+@charset "utf-8";
+/* 코트라 희망체 */
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 여기어때 잘난체 */
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid darkgray; */
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 16px;
+}
+a{
+    display: block;
+    color: #fff;
+}
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    font-family: 'KOTRAHOPE';
+}
+/* nav */
+#nav{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+#nav ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1% 0;
+}
+#nav ul li{
+    width: 35%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
+}
+#nav ul li:hover,
+#nav ul li.active{
+    opacity: 1;
+}
+#nav ul li a{
+    font-family:'KOTRAHOPE';
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding: 2% 0%;
+}
+/* part1 */
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background: url(../image/luca_bg.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center; 
+    position: relative;
+}
+.part1 .p1{
+    display: flex;
+}
+.part1 .p1 .cha{
+    background: url(../image/luca_1.png)no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 30%;
+    height: 80vh;
+}
+.part1 .p1 > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.part1 .p1 > div:last-child{
+    margin-left: 5%;
+}
+.part1 .p1 .logo{
+    background: url(../image/luca_logo.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 80%;
+    height: 50vh;
+    margin-bottom: 5%;
+}
+.part1 .p1 p{
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 5% 0;
+}
+.part1 .scroll > p{
+    color: #fff;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 1.2rem;
+}
+.part1 .scroll span{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.part1 .scroll span::before {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+  }
+  @keyframes sdb {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+/* part2 */
+.part2{
+    background: url(../image/luca_tbg.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5% 0;
+}
+h1{
+    font-family:'KOTRAHOPE' ;
+    letter-spacing: 10px;
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: center;
+    padding: 1% 0;
+}
+.part2 p{
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+}
+.part2 .tab1{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 3% 0px;
+}
+.part2 .tab1 > ul{
+    width: 10%;
+}
+.part2 .tab1 > ul li{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5% 0;
+    margin: 5% 10%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.part2 .tab1 > ul li:hover,
+.part2 .tab1 > ul li.on{
+    color: #7ecd56;
+    transition: all 0.3s;
+}
+.part2 .tab1 .content{
+    width: 60%;
+    margin: 0 10% 0 5%;
+}
+.part2 .tab1 .content .conBox{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 0;
+    padding-top: 55%;
+}
+.part2 .tab1 .content .conBox iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.part2 .tab1 .content .conBox.on{
+    display: block;
+}
+.part2 .tab1 .conBox .tab2 .p2_box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.part2 .tab1 .conBox .tab2 .p2_box p{
+    word-break: keep-all;
+    padding: 5%;
+    cursor: pointer;
+    margin: 0 5%;
+}
+.part2 .tab1 .conBox .tab2 .p2_box .p1{
+    width: 30%;
+    margin: 3% 0;
+}
+.part2 .tab1 .conBox .tab2 .p2_box .p1:hover p,
+.part2 .tab1 .conBox .tab2 .p2_box .p1.on p{
+    color: #7ecd56;
+    transition: all 0.3s;
+}
+.part2 .tab1 .content .conBox .tab2{
+    width: 100%;
+}
+.part2 .tab1 .content .conBox .tab .video_box{
+    height: 100%;
+}
+.part2 .tab1 .content .conBox .tab2 .contBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.part2 .tab1 .content .conBox .tab2 .contBox.on{
+    display: block;
+}
+/* part3 */
+.part3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.part3 ul{
+    width: 4%;
+    position: fixed;
+    right: 0;
+    margin: 5%;
+    z-index: 50;
+}
+.part3 li{
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background: darkkhaki;
+    cursor: pointer;
+    margin: 20% 0;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.part3 li.on,
+.part3 li:hover{
+    width: 110%;
+    padding-top: 110%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.part3 li:nth-child(1){
+    background: url(../image/luca_tab1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(2){
+    background: url(../image/luca_tab2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(3){
+    background: url(../image/luca_tab3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(4){
+    background: url(../image/luca_tab4.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(5){
+    background: url(../image/luca_tab5.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(6){
+    background: url(../image/luca_tab6.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 li:nth-child(7){
+    background: url(../image/luca_tab7.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content{
+    width: 100%;
+    height: 100vh;
+}
+.part3 .cha .content .Box{
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    /* left: -100%; */
+    right: -100%;
+}
+.part3 .cha .content .Box.on{
+    /* display: block; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    /* left: 0;
+    transition: left 0.8s ease-in 0.2s; */
+    right: 0;
+    transition: right 0.8s ease-in 0s;
+}
+.part3 .cha .content .Box:nth-child(1){
+    background: url(../image/ch_bg1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(2){
+    background: url(../image/ch_bg2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(3){
+    background: url(../image/ch_bg3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(4){
+    background: url(../image/ch_bg4.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(5){
+    background: url(../image/ch_bg5.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(6){
+    background: url(../image/ch_bg6.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .Box:nth-child(7){
+    background: url(../image/ch_bg7.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    font-family: 'yg-jalnan';
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 5% 0;
+}
+.part3 .text p{
+    color: #fff;
+    font-size: 1rem;
+    margin: 2% 0;
+    word-break: keep-all;
+}
+.part3 .cha .content .main > div{
+    display: flex;
+    padding-top: 5%;
+}
+.part3 .cha .content .main#chr2 > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top: 5%;
+}
+.part3 .cha .content .main > div > div:last-child{
+    width: 50%;
+}
+.part3 .cha .content .main:nth-child(1) .img{
+    background: url(../image/luca_ch1.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 30%;
+    height: 80vh;
+}
+.part3 .cha .content .main:nth-child(1) .img:hover{
+    background: url(../image/luca_monster.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.part3 .cha .content .main:nth-child(2) .img{
+    background: url(../image/luca_ch2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 30%;
+    height: 80vh;
+}
+.part3 .cha .content .main:nth-child(2) .img:hover{
+    background: url(../image/Alberto_monster.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.part3 .cha .content .main:nth-child(3) .img{
+    background: url(../image/luca_ch3.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 30%;
+    height: 80vh;
+}
+
+.part3 .cha .content .main:nth-child(1) .img_box >  div:nth-child(1){
+    background: url(../image/luca_img1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(1) .img_box >  div:nth-child(2){
+    background: url(../image/luca_img2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(1) .img_box >  div:nth-child(3){
+    background: url(../image/luca_img3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(2) .img_box >  div:nth-child(1){
+    background: url(../image/alb_img1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(2) .img_box >  div:nth-child(2){
+    background: url(../image/alb_img2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(2) .img_box >  div:nth-child(3){
+    background: url(../image/alb_img3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(3) .img_box >  div:nth-child(1){
+    background: url(../image/giu_img1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(3) .img_box >  div:nth-child(2){
+    background: url(../image/giu_img2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part3 .cha .content .main:nth-child(3) .img_box >  div:nth-child(3){
+    background: url(../image/giu_img3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.part3 .cha .content .main > div >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+}
+.part3 .cha .content .main .img_box{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+.part3 .cha .content .Box .img_box >  div{
+    width: 30%;
+    height: 100%;
+    opacity: 0.7;
+}
+.part3 .cha .content .Box .img_box >  div:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    opacity: 1; 
+}
+.part3 .cha .content .other{
+    padding-top: 5%;
+}
+.part3 .cha .content .other > div{
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+.part3 .cha .content .other .text{
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    background: rgba(255,255,255,0.2);
+    margin: 0 5%;
+}
+.part3 .cha .content .other .text h2{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 5%;
+}
+.part3 .cha .content .other .img{
+    width: 30%;
+    height: 35vh;
+}     
+.part3 .cha .content #chr5.on {
+    display: flex;
+    justify-content: center;
+}
+.part3 .cha .content #chr5.on > div{
+    flex-direction: column;
+    width: 40%;
+    padding-top: 5%;
+}
+.part3 .cha .content #chr5.on > div .img{
+    width: 70%;
+    height: 35vh;
+    margin-bottom: 5%;
+}
+.part3 .cha .content #chr5.on > div .text{
+    width: 90%;
+}  
+.part3 .cha .content #chr4 .top .img{
+    background: url(../image/luca_ch4.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr4 .bottom .img{
+    background: url(../image/luca_ch5.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr5 .left .img{
+    background: url(../image/luca_ch6.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr5 .right .img{
+    background: url(../image/luca_ch7.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr6 .top .img{
+    background: url(../image/luca_ch8.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr6 .bottom .img{
+    background: url(../image/luca_ch9.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr7 .top .img{
+    background: url(../image/luca_ch10.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 .cha .content #chr7 .bottom .img{
+    background: url(../image/luca_ch11.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part3 #chr4 .mobile{
+    display: none;
+}
+/* part4 */
+.part4{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/wd_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+   padding-top: 5%;
+}
+.part4 h2{
+    width: 20%;
+    font-size: 3rem;
+    font-family: 'KOTRAHOPE';
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+}
+.part4 h3{
+    font-family: 'yg-jalnan';
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 5% 0;
+    text-shadow: 2px 2px 10px black;
+}
+.part4 h4{
+    font-family: 'KOTRAHOPE';
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 3% 0;
+}
+.part4 p{
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 3% 0;
+}
+.part4 .w_box{
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+.part4 .w_box > .w_t{
+    width: 15%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5%;
+    opacity: 0.5;
+}
+.part4 .w_box > .w_t:hover{
+    /* width: 60%; */
+    opacity: 1;
+    transition: all 0.5s;
+}
+.part4 .w_box > .w_t.on{
+    width: 60%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.part4 .w_box > .w_t > div >h4,
+.part4 .w_box > .w_t > div >p{
+    display: none;
+}
+.part4 .w_box > .w_t h3{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.part4 .w_box > .w_t.on h3{
+    writing-mode: unset;
+    text-orientation: unset;
+}
+.part4 .w_box > .w_t.on > div > h4,
+.part4 .w_box > .w_t.on > div >p{
+    display: block;
+}
+.part4 .w_box > .w_t:nth-child(1){
+    background: url(../image/Portorosso.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .w_box > .w_t:nth-child(2){
+    background: url(../image/under_water.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .w_box > .w_t:nth-child(3){
+    background: url(../image/island.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* part5 */
+.part5{
+    background: url(../image/gallery_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.part5 h2{
+    margin: 0;
+    margin-top: 5%;
+}
+.part5 > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    /* margin-top: 5%; */
+}
+.part5 .swiper{
+    width: 100%;
+    height: 50vh;
+}
+.part5 .gallery .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    transform: scale(0.7);
+}
+.part5 .gallery .swiper-slide-active{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.part5 .gallery .g1{
+    background: url(../image/g1.jpg) no-repeat;
+}
+.part5 .gallery .g2{
+    background: url(../image/g2.JPG) no-repeat;
+}
+.part5 .gallery .g3{
+    background: url(../image/g3.JPG) no-repeat;
+}
+.part5 .gallery .g4{
+    background: url(../image/g4.JPG) no-repeat;
+}
+.part5 .gallery .g5{
+    background: url(../image/g5.jpg) no-repeat;
+}
+.part5 .gallery .g6{
+    background: url(../image/g16.jpg) no-repeat;
+}
+.part5 .gallery .g7{
+    background: url(../image/g7.jpg) no-repeat;
+}
+.part5 .gallery .g8{
+    background: url(../image/g8.jpg) no-repeat;
+}
+.part5 .gallery .g9{
+    background: url(../image/g9.jpg) no-repeat;
+}
+.part5 .gallery .g10{
+    background: url(../image/g10.jpg) no-repeat;
+}
+.part5 .gallery .g11{
+    background: url(../image/g11.jpg) no-repeat;
+}
+.part5 .gallery .g12{
+    background: url(../image/g12.jpg) no-repeat;
+}
+.part5 .gallery .g13{
+    background: url(../image/g13.jpg) no-repeat;
+}
+.part5 .gallery .g14{
+    background: url(../image/g14.jpg) no-repeat;
+}
+.part5 .gallery .g15{
+    background: url(../image/g15.jpg) no-repeat;
+}
+.part5 .gallery .g16{
+    background: url(../image/g16.jpg) no-repeat;
+}
+.part5 .gallery .g17{
+    background: url(../image/g17.jpg) no-repeat;
+}
+.part5 .gallery .g18{
+    background: url(../image/g18.jpg) no-repeat;
+}
+.part5 .gallery .g19{
+    background: url(../image/g19.jpg) no-repeat;
+}
+.part5 .gallery .g20{
+    background: url(../image/g20.jpg) no-repeat;
+}
+.part5 .gallery .g21{
+    background: url(../image/g21.jpg) no-repeat;
+}
+.part5 .gallery .g22{
+    background: url(../image/g22.jpg) no-repeat;
+}
+.part5 .gallery .g23{
+    background: url(../image/g23.jpg) no-repeat;
+}
+.part5 .gallery .g24{
+    background: url(../image/g24.jpg) no-repeat;
+}
+.part5 .gallery .g25{
+    background: url(../image/g25.jpg) no-repeat;
+}
+.part5 .gallery .swiper-slide{
+    background-size: 100% auto;
+    background-position: center;
+}
+.part5 .swiper-pagination-bullet {
+    background: rgba(255,255,255,0.8);
+}
+.part5 .swiper-pagination{
+ --swiper-theme-color: #fff;
+}
+footer{
+    height: 15vh;
+}
+footer > div {
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 5px 0;
+}

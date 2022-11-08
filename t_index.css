@@ -1,0 +1,59 @@
+body {
+    min-width: 640px;
+}
+*{
+    font-size: 14px;
+}
+h2{
+    margin: 5vh 0;
+}
+a{
+    padding: 2vh
+}
+.text_box {
+    width: 100%;
+    padding: 5vh 0;
+}
+.text_box p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5vh;
+}
+.section .screen {
+    width: 80%;
+}
+.s1 > .text_box{
+    display: block;
+}
+.s1{
+    display: flex;
+    flex-direction: column-reverse; 
+    justify-content: center
+}
+.part2 > div:first-child,
+.part3 > div:first-child,
+.part4 > div:first-child{
+    display: none;
+}
+.swiper-button-prev {
+    left: 3%;
+}
+.swiper-button-next{
+    right: 3%;
+}
+.text_box>.logo {
+    display: none;
+}
+.part2 .screen .s_box,
+.part3 .screen .s_box,
+.part4 .screen .s_box {
+    width: 65%;
+    height: 0;
+    padding-top: calc(300/918*100%);
+    margin: 0 auto;
+}
+.part2 .right .color>div,
+.part3 .right .color>div,
+.part4 .right .color>div {
+    width: 10%;
+}
