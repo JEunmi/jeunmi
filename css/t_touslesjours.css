@@ -1,0 +1,273 @@
+body {
+    min-width: 640px;
+}
+*{
+    font-size: 13px;
+}
+/* nav */
+header{
+    height: 45vh;
+}
+header::before{
+    height: 45vh;
+}
+header::after{
+    bottom: 15%;
+    height: 20vh;
+}
+header .nav > a {
+    margin: 2% 0 0 2%;
+}
+header .nav{
+    height: 10vh;
+}
+header .nav img{
+    width: 70%;
+    height: auto;
+}
+header .nav .menu> ul{
+    flex-direction: column;
+}
+header .nav .menu{
+    width: 5vw;
+    height: 5vh;
+    margin-right: 2%;
+    margin-top: 2%;
+    display: flex;
+}
+header .nav .menu > ul{
+    align-items: center;
+    justify-content:center ;
+    padding-top: 0%;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+}
+header .nav .menu > ul > li{
+    width: 80%;
+}
+header .nav .menu > ul > li > a {
+    font-size: 3rem;
+    padding: 2%0;
+}
+header .nav .submenu {
+    position: relative;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 ;
+}
+header .nav .submenu > li > a{
+    padding: 2% 0;
+}
+/* m_mobile button */
+.menu .menu_b{
+    width: 4vw;
+    height: 3vh;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.menu .menu_b.on{
+    position: fixed;
+    z-index: 50
+}
+.menu .menu_b span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 100;
+    transition: 0.3s;
+    right: 0;
+
+}
+.menu .menu_b span:nth-child(1){
+    top: 0;
+}
+.menu .menu_b span:nth-child(2){
+    top: 50%;
+}
+.menu .menu_b span:nth-child(3){
+    top: 100%;
+}
+.menu_b.on span:nth-child(1){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+.menu_b.on span:nth-child(2){
+    opacity: 0;
+}
+.menu_b.on span:nth-child(3){
+    top: 50%;
+    transform: rotate(45deg);
+}
+.menu_b ~ ul{
+    align-items: center;
+    justify-content:center ;
+    padding-top: 15%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;
+    width: 100%;
+    height: 80vh;
+    /* background: #5d5d5d; */
+    background: #002D19;
+    transition: 0.3s;
+}
+.menu_b.on ~ ul{
+    right: 0;
+}
+
+header .nav .menu .menu_b ~ ul::before{
+    content: "";
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right:68%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+}
+header .nav .menu .menu_b.on ~ ul::before{
+    opacity: 1;
+    width: 30%;
+    right: 70%;
+    transition: 0.25s;
+    transition-delay: 0.2s;
+}
+
+/* part1*/
+.part1 {
+    padding-top: 5%;
+}
+.part1 > .p1_t,
+.part1 > .p1_b{
+    width: 80%;
+}
+.part1 > .p1_t > .p1t_info{
+    width: 40%;
+    margin-right: 5%;
+}
+.part1 > .p1_b > .p1b_info{
+    width: 40%;
+    margin-left: 5%;
+}
+.part1 > .p1_t > .p1t_info > p,
+.part1 > .p1_b > .p1b_info > p{
+    margin: 5% 0;
+}
+.part1 > .p1_t > .p1t_img,
+.part1 > .p1_b > .p1b_img{
+    width: 45%;
+}
+.part1 > .p1_t > .p1t_img > div,
+.part1 > .p1_b > .p1b_img > div{
+    width: 100%;
+    height: 100%;
+}
+/* part2 */
+.part2{
+    height: 35vh;
+}
+.part2 > div > a{
+    width: 25%;
+    height: 4vh;
+    background: rgba(255,255,255,45%);
+}
+/* part3 */
+.part3 .p3{
+    height: auto;
+}
+.part3 .p3 .p3_info{
+    width: 45%;
+}
+.part3 .p3 .swiper-slide > div:last-child{
+    margin: 5%;
+}
+.part3 .p3_img1,
+.part3 .p3_img2,
+.part3 .p3_img3,
+.part3 .p3_img4,
+.part3 .p3_img5,
+.part3 .p3_img6,
+.part3 .p3_img7{
+    width: 45%;
+    height: 0%;
+    padding-top: calc(540/1200*100%)
+}
+.part3 .swiper-slide.swiper-slide-active {
+    flex-basis: 100%;
+    margin-left: 0;
+}
+.part3 .swiper-button-prev {
+    left: 15%;
+}
+.part3 .swiper-button-next {
+    left: 30%;
+}
+.part3 .swiper-button-next, .part3 .swiper-button-prev {
+    top: 75%;
+}
+
+/* part4 */
+.part4{
+    height: auto;
+}
+.part4 .products{
+    width: 80%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10% 0;
+}
+.part4 .products .bread,
+.part4 .products .cake,
+.part4 .products .deli,
+.part4 .products .other {
+    width: 20%;
+}
+.part4 .products .bread >div,
+.part4 .products .cake >div,
+.part4 .products .deli >div,
+.part4 .products .other >div{
+    width: 100%;
+    height: 0;
+    padding-top: calc(280/280*100%);
+}
+/* part5 */
+.part5{
+    height: auto;
+}
+.part5 > div > .p5{
+    padding: 10% 0;
+}
+.part5 > div > .p5 >.swiper-wrapper>div {
+    width: 100%;
+    height: 0;
+    padding-top: calc(1500/3000*100%);
+}
+.part5 .swiper-button-next,
+.part5 .swiper-button-pre {
+    top: 65%;
+}
+
+/* footer */
+footer{
+    height: auto;
+}
+.part6{
+    width: 80%;
+}
+.part6:after {
+    display: none;
+}
+.part6 .p6_l > div:first-child {
+    width: 90%;
+    height: 0;
+    padding-top: calc(360/1500*100%);
+}
+.part6 .p6_r a{
+    width: 90%;
+}
