@@ -1,0 +1,1235 @@
+@charset "utf-8";
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 코트라 희망체 */
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 여기어때 잘난체 */
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 쿠키런 */
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRunOTF-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 카페 24 빛나는 별 */
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Gmarket Sans */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 조선 100년체 */
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid darkgray; */
+    list-style: none;
+    text-decoration: none;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    padding: 5%;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.section {
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'GmarketSansBold';
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'GmarketSansBold';
+    font-size: 1.3rem;
+    margin: 10% 0;
+}
+
+h3 {
+    font-family: 'GmarketSansBold';
+    font-size: 1.2rem;
+    margin: 2vh 0;
+}
+
+.button {
+    text-align: center;
+    position: relative;
+}
+
+.text_box {
+    width: 40%;
+    padding: 5vh 10vh;
+}
+
+.text_box>.logo {
+    width: 100%;
+    height: 10vh;
+}
+
+.text_box p {
+    font-size: 0.9rem;
+    word-break: keep-all;
+    padding: 5% 0;
+    margin: 10% 0;
+    line-height: 1.5rem;
+}
+
+.section .screen {
+    width: 50%;
+    height: 100vh;
+}
+
+.swiper-slide:nth-child(2),
+.swiper-slide:nth-child(3) {
+    padding-top: 15vh;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+}
+
+.middle>div {
+    margin: 2vh 0;
+}
+
+.middle .font p {
+    margin: 10px 0;
+}
+
+.swiper-slide p {
+    font-size: 0.8rem;
+    padding-right: 10%;
+    word-break: keep-all;
+}
+
+.screen .right .r2 .p,
+.screen .right .r2 .m {
+    cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 2.5vw;
+}
+
+.swiper-button-prev {
+    left: 42%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+/*  */
+.s1 > .text_box{
+    display: none;
+}
+/* nav */
+#nav ul {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 50%;
+}
+
+#nav ul li {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 2% 0;
+}
+
+#nav ul li a {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* part1 */
+.part1 {
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 15%;
+}
+.part1 h1{
+    color: #fff;
+    text-shadow: 0 8px 9px #93a5cf, 0px -2px 1px #fff;
+}
+.part1 p {
+    font-family: 'Cafe24Shiningstar';
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2% 0;
+    color: #fff;
+}
+.part1 div:first-child{
+    margin-top: 10vh;
+}
+.part1 div:first-child span {
+    display: block;
+    margin: 5% 0;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 5%;
+    font-family: 'CookieRun-Regular';
+    color: #fff;
+    text-shadow: 0 8px 9px #93a5cf, 0px -2px 1px #fff;
+}
+
+.part1 .scroll > p {
+    font-family: 'CookieRun-Regular';
+    text-align: center;
+    padding-bottom: 7vh;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.part1 .scroll  span {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.part1 .scroll span::before {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+}
+
+@keyframes sdb {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* part2 */
+.part2 {
+    background: url(image/t_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+.part2 h2, 
+.part2 h3{
+    text-shadow: 2px 1px 2px #808080a1;
+}
+.part2 .text_box>.logo {
+    background: url(image/t_logo1.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.part2 .screen .s_box {
+    width: 100%;
+    height: 100%;
+    background: url(image/t_s.png) no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+}
+
+.part2 .screen .s_box:hover {
+    background-size: 100%;
+    transition: all 1s;
+}
+
+.part2 .middle .logo_box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+}
+
+.part2 .middle .logo_box div:nth-child(1) {
+    background: url(image/t_logo1.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.part2 .middle .logo_box div:nth-child(2) {
+    background: url(image/t_logo2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.part2 .middle .font p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
+}
+
+.part2 .middle .font p:nth-child(3) {
+    font-family: 'Cafe24Shiningstar';
+    font-size: 1.5rem;
+}
+
+.part2 .middle .font p:nth-child(4) {
+    font-family: 'CookieRun-Regular';
+    font-size: 1.3rem;
+}
+
+.part2 .right .color {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.part2 .right .color>div {
+    width: 13%;
+    position: relative;
+    margin: 2%;
+}
+
+.part2 .right .color p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.part2 .right .color>div:nth-child(1) p,
+.part2 .right .color>div:nth-child(3) p {
+    color: #fff;
+}
+
+.part2 .right .color>div:nth-child(1)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #167152;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part2 .right .color>div:nth-child(2)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #dde7df;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part2 .right .color>div:nth-child(3)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #f26a26;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part2 .right .color>div:nth-child(4)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #fdfae9;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part2 .right>div:last-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.part2 .right div:last-child .p {
+    width: 55%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part2 .right div:last-child .p:hover>div {
+    top: -1000px;
+}
+
+.part2 .right div:last-child .p>div {
+    background: url(image/touslesjours_p.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(6427/1920*100%);
+    position: absolute;
+    top: 0;
+    transition: all 3s;
+}
+
+.part2 .right div:last-child .m {
+    width: 35%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part2 .right div:last-child .m:hover>div {
+    top: -1800px;
+}
+
+.part2 .right div:last-child .m>div {
+    background: url(image/touslesjours_m.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(7285/850*100%);
+    position: absolute;
+    top: 0;
+    transition: all 5.5s;
+}
+
+.part2 .button a {
+    background: #167152;
+    color: #fff;
+    position: relative;
+}
+
+.part2 .button a:hover {
+    color: #333;
+    background: unset;
+}
+
+.part2 .button a:before,
+.part2 .button a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #167152;
+    transition: 400ms ease all;
+}
+
+.part2 .button a:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.part2 .button a:hover:before,
+.part2 .button a:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.part2 .swiper-button-next svg,
+.part2 .swiper-button-prev svg {
+    fill: #167152;
+}
+
+/* part3 */
+.part3 {
+    background: url(image/l_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.part3 h2, 
+.part3 h3{
+    text-shadow: 2px 1px 2px #808080a1;
+}
+.part3 .text_box>.logo {
+    background: url(image/l_logo.svg) no-repeat;
+    background-size: auto 90%;
+    background-position: left;
+    height: 25vh;
+}
+
+.part3 .screen .s_box {
+    width: 100%;
+    height: 100%;
+    background: url(image/l_s.png) no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+}
+
+.part3 .screen .s_box:hover {
+    background-size: 100%;
+    transition: all 1s;
+}
+
+.part3 .screen .logo_box {
+    width: 100%;
+    height: 15vh;
+}
+
+.part3 .screen .logo_box>div {
+    background: url(image/l_logo.svg) no-repeat;
+    background-size: auto 100%;
+    background-position: left;
+    width: 100%;
+    height: 100%;
+}
+
+.part3 .middle .font p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
+}
+
+.part3 .middle .font p:nth-child(3) {
+    font-family: 'KOTRAHOPE';
+    font-size: 1.5rem;
+}
+
+.part3 .middle .font p:nth-child(4) {
+    font-family: 'yg-jalnan';
+    font-size: 1.2rem;
+}
+
+.part3 .right .color {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh
+}
+
+.part3 .right .color>div {
+    width: 13%;
+    position: relative;
+    margin: 2%;
+}
+
+.part3 .right .color p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.part3 .right .color div:nth-child(2n-1) {
+    top: 2vh;
+}
+
+.part3 .right .color div:nth-child(2n-1) p::after {
+    margin-top: 2vh;
+}
+
+.part3 .right .color div:nth-child(2n) {
+    top: -2vh;
+}
+
+.part3 .right .color div:nth-child(2n) p::after {
+    margin-bottom: 2vh;
+}
+
+.part3 .right .color>div:nth-child(1)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #48b057;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(2)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #294232;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(3)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #3656d1;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(4)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #7a3e67;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(5)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #fe4854;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(6)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #864c2d;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right .color>div:nth-child(7)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #0a1c4a;
+    box-shadow: 3px 3px 10px 3px #bababa;
+}
+
+.part3 .right>div:last-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.part3 .right div:last-child .p {
+    width: 55%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part3 .right div:last-child .p:hover>div {
+    top: -800px;
+}
+
+.part3 .right div:last-child .p>div {
+    background: url(image/luca_p.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(1710/600*100%);
+    position: absolute;
+    top: 0;
+    transition: all 3s;
+}
+
+.part3 .right div:last-child .m {
+    width: 35%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part3 .right div:last-child .m:hover>div {
+    top: -1800px;
+}
+
+.part3 .right div:last-child .m>div {
+    background: url(image/luca_m.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(7285/850*100%);
+    position: absolute;
+    top: 0;
+    transition: all 5.5s;
+}
+
+.part3 .button a {
+    background: #0099b0;
+    color: #fff;
+    position: relative;
+}
+
+.part3 .button a:hover {
+    color: #333;
+    background: unset;
+}
+
+.part3 .button a:before,
+.part3 .button a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #0099b0;
+    transition: 400ms ease all;
+}
+
+.part3 .button a:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.part3 .button a:hover:before,
+.part3 .button a:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.part3 .swiper-button-next svg,
+.part3 .swiper-button-prev svg {
+    fill: #0099b0;
+}
+
+/* part4 */
+.part4 {
+    background: url(image/p_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.part4 .text_box>.logo {
+    background: url(image/taxpayerlogo.svg) no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+}
+
+
+.part4 p,
+.part4 a {
+    color: #fff;
+}
+
+.part4 a {
+    border: 1px solid #fff;
+}
+
+.part4 h2,.part4 h3 {
+    color: #fff;
+    text-shadow: 2px 1px 2px #d8d8d8a1;
+}
+
+.part4 .screen .s_box {
+    width: 100%;
+    height: 100%;
+    background: url(image/p_s.png) no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+}
+
+.part4 .screen .s_box:hover {
+    background-size: 100%;
+    transition: all 1s;
+}
+
+.part4 .middle .logo_box {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+}
+
+.part4 .middle .logo_box div {
+    background: url(image/taxpayerlogo.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: left;
+    width: 30%;
+    height: 100%;
+}
+
+.part4 .middle .font p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
+}
+
+.part4 .right .color {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh
+}
+
+.part4 .right .color>div {
+    width: 13%;
+    position: relative;
+    margin: 2%;
+}
+
+.part4 .right .color p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4 .right .color>div:nth-child(3) p {
+    color: #333;
+}
+
+.part4 .right .color>div:nth-child(1)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #112d4f;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+
+.part4 .right .color>div:nth-child(2)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #2d75cc;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+
+.part4 .right .color>div:nth-child(3)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #f6f6f6;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+
+.part4 .right>div:last-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.part4 .right div:last-child .p {
+    width: 55%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part4 .right div:last-child .p:hover>div {
+    top: -500px;
+}
+
+.part4 .right div:last-child .p>div {
+    background: url(image/taxpauer_p.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(6005/2880*100%);
+    position: absolute;
+    top: 0;
+    transition: all 3s;
+}
+
+.part4 .right div:last-child .m {
+    width: 35%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part4 .right div:last-child .m:hover>div {
+    top: -1200px;
+}
+
+.part4 .right div:last-child .m>div {
+    background: url(image/taxpayer_m.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(5397/850*100%);
+    position: absolute;
+    top: 0;
+    transition: all 4.5s;
+}
+
+.part4 .button a {
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+    position: relative;
+    border: unset
+}
+
+.part4 .button a:hover {
+    color: #fff;
+    background: unset;
+}
+
+.part4 .button a:before,
+.part4 .button a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transition: 400ms ease all;
+}
+
+.part4 .button a:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.part4 .button a:hover:before,
+.part4 .button a:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.part4 .swiper-button-next svg,
+.part4 .swiper-button-prev svg {
+    fill: #fff;
+}
+/* part5 */
+.part5 {
+    background: url(image/duk_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.part5 .text_box>.logo {
+    background: url(image/duk_logo.png) no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+}
+
+
+/* .part5 p,
+.part5 a {
+    color: #fff;
+}
+.part5 a {
+    border: 1px solid #fff;
+} */
+
+.part5 h2, .part5 h3 {
+    /* color: #fff; */
+    text-shadow: 2px 1px 2px #808080a1;
+}
+
+.part5 .screen .s_box {
+    width: 100%;
+    height: 100%;
+    background: url(image/d_s.png) no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+}
+
+.part5 .screen .s_box:hover {
+    background-size: 100%;
+    transition: all 1s;
+}
+
+.part5 .middle .logo_box {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+}
+
+.part5 .middle .logo_box div {
+    background: url(image/duk_logo.png) no-repeat;
+    background-size: 100% auto;
+    background-position: left;
+    width: 30%;
+    height: 100%;
+}
+
+.part5 .middle .font p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
+}
+.part5 .middle .font p:nth-child(3) {
+    font-family: 'ChosunCentennial';
+    font-size: 1.5rem;
+}
+.part5 .right .color {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh
+}
+
+.part5 .right .color>div {
+    width: 13%;
+    position: relative;
+    margin: 2%;
+}
+
+.part5 .right .color p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part5 .right .color>div:nth-child(1) p,
+.part5 .right .color>div:nth-child(4) p{
+    color: #fff;
+}
+
+.part5 .right .color>div:nth-child(1)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #b99894;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+
+.part5 .right .color>div:nth-child(2)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #fff6e2;
+    box-shadow: 3px 3px 10px 3px #565656;   
+}
+
+.part5 .right .color>div:nth-child(3)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #ffd700;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+.part5 .right .color>div:nth-child(4)::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: #4660a2;
+    box-shadow: 3px 3px 10px 3px #565656;
+}
+.part5 .right>div:last-child {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.part5 .right div:last-child .p {
+    width: 55%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part5 .right div:last-child .p:hover>div {
+    top: -500px;
+}
+
+.part5 .right div:last-child .p>div {
+    background: url(image/duk_p.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(7900/2880 *100%);
+    position: absolute;
+    top: 0;
+    transition: all 3s;
+}
+
+.part5 .right div:last-child .m {
+    width: 35%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.part5 .right div:last-child .m:hover>div {
+    top: -1200px;
+}
+
+.part5 .right div:last-child .m>div {
+    background: url(image/duk_m.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: calc(5508/1000*100%);
+    position: absolute;
+    top: 0;
+    transition: all 4.5s;
+}
+
+.part5 .button a {
+    background: #ce857c;
+    color: #fff;
+    position: relative;
+    border: unset
+}
+
+.part5 .button a:hover {
+    color: #000;
+    background: unset;
+}
+
+.part5 .button a:before,
+.part5 .button a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #ce857c;
+    transition: 400ms ease all;
+}
+
+.part5 .button a:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.part5 .button a:hover:before,
+.part5 .button a:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.part5 .swiper-button-next svg,
+.part5 .swiper-button-prev svg {
+    fill: #cf857c;
+}
+/* part6 */
+.part6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg,#e4efe9 0%, #93a5cf 100%);
+}
+
+.part6 h2 {
+    margin: 5% 0;
+    font-size: 1.5rem;
+    text-shadow: 2px 1px 2px #808080a1;
+}
+
+.part6 p {
+    margin: 2vh 0;
+}
+
+.part6 .t {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
