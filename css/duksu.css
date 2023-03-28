@@ -1,0 +1,726 @@
+@charset "UTF-8";
+/* 조선100년체 */
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid darkgray; */
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+html{
+    font-size: 14px;
+}
+body{
+    font-size: 1rem;
+}
+a{
+    display: block;
+    color: #333;
+}
+a:visited{
+    text-decoration: none;
+    color: #333;
+}
+h2{
+    font-family: 'ChosunCentennial';
+    font-size: 2.8rem;
+    font-weight: lighter;
+    color: #535353;
+    padding: 2% 0;
+}
+h3{
+    font-family: 'ChosunCentennial';
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #535353;
+    margin: 5% 10%;
+}
+header{
+    padding: 0% 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 15;
+}
+
+/* nav */
+.menu_b{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+.nav img:first-child {
+    width: 200px;
+    height: auto;
+}
+.nav img:last-child {
+    display: none;
+}
+.nav > ul{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 70%;
+}
+.nav > ul> li{
+    position: relative; 
+}
+.nav> ul > li > a{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 10% 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.nav> ul > li:hover> a{
+color: #ffd700;
+}
+.nav > ul > li > .submenu{
+     display: none; 
+     position: absolute;
+     top: 50px;
+     left: -20px;
+     width: 200px;
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.nav > ul > li > .submenu > li > a{
+    padding: 4% 1% 4% 30px;
+    font-size: 0.9rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+.nav > ul > li > .submenu > li:hover{
+    background:  rgba(255, 255, 255, 1);
+}
+.nav > ul > li > .submenu > li:hover > a{
+    color: 	#ffa100;
+}
+.nav > ul .sub2_t{
+    position: relative;
+}
+.nav > ul .sub2_t::before{
+    content: "▾";
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 10px;
+    height: 10px;
+    color: #535353;
+}
+.nav > ul .sub2{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+}
+.nav > ul .submenu .sub2 > li > a{
+    font-size: 0.9rem;
+    padding: 5%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8 );
+}
+.nav > ul .submenu .sub2 > li:hover{
+    background: rgba(255, 255, 255, 1);
+}
+.nav > ul .submenu .sub2 > li:hover > a{
+    color: 	#ffa100;
+}
+section:not(.part1){
+    padding:5% 10%;
+}
+/* part1 */
+.part1{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+}
+.part1 > div:first-child{
+    writing-mode: vertical-lr;
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 12%;
+}
+.part1 h1{
+    font-family: 'ChosunCentennial';
+    font-size: 4rem;
+    text-align: center;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.part1 p{
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.part1 p:nth-child(1){
+   margin-top: 10%;
+   margin: 10% 25% 0 0;
+}
+.part1 p:nth-child(2){
+    text-align: end;
+    font-size: 1.3rem;
+}
+.part1 .main{
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.part1 .main .swiper-slide:nth-child(1){
+    width: 100%;
+    background: url(../image/duk_main.png)no-repeat;
+    background-size: 100% auto;
+    background-position: 0% 30%;
+}
+.part1 .main .swiper-slide:nth-child(2){
+    width: 100%;
+    background: url(../image/duk_main2.png)no-repeat;
+    background-size: 100% auto;
+    background-position: 0 5%;
+}
+.part1 .main .swiper-slide:nth-child(3){
+    width: 100%;
+    background: url(../image/duk_main3.png)no-repeat;
+    background-size: 100% auto;
+    background-position: 0 60%;
+}
+.part1 .swiper{
+    --swiper-theme-color: #fff;
+}
+.part1 .swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color,#fff);
+}
+/* part2 */
+.part2{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.part2 div:first-child{
+    background: url(../image/duk_history.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 70%;
+}
+.part2 .text_box{
+    width: 35%;
+    padding: 3% 0;
+}
+.part2 .text_box p:nth-of-type(1){
+    margin:10% 0;
+    word-break: keep-all;
+}
+.part2 .text_box  p:nth-of-type(2){
+    display: none;
+}
+
+.part2 .text_box a{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    width: 230px;
+    padding:3% 0;
+    margin: 0 10%;
+    position: relative;
+}
+
+.part2 .text_box a::before{
+    content: "";
+    top: -10%;
+   left: -5%;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    border: 2px solid rgb(185, 152, 148);
+    border-radius:0 20px 0 20px;
+}
+.part2 .text_box a::after{
+    content: "";
+    top: 15%;
+    left: 5%;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    border-radius:0 20px 0 20px;
+    background: #eae0de;
+    z-index: -1;
+}
+.part2 .text_box a:hover{
+    font-weight: 400;
+    transition: all .3s;
+}
+.part2 .text_box a:hover::before,
+.part2 .text_box a:hover::after{
+    top: 0;
+    left: 0;
+    transition: all.5s;
+}
+/* part3 */
+.part3{
+    width: 100%;
+    height: 800px;
+    background: url(../image/duk_story.png) no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+section.part3{
+    padding-top: 8%;
+}
+.part3 h2{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.part3 .duk{
+    width: 90%;
+    height: 85%;
+}
+.part3 .swiper-slide{
+    display:flex;
+    justify-content: end;
+    position: relative;
+}
+.part3 .swiper-slide:before{
+    content: "";
+    width: 28%;
+    height: 2px;
+    background: #535353;
+    bottom: 9%;
+    right: 20%;
+    position: absolute;
+}
+.part3 .text{
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    width: 40%;
+    height: 70%;
+    background: #fff;
+    border-radius:0 20px 0 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 5% 0;
+}
+.part3 .text p{
+    margin: 5% 10%;
+}
+.part3 .text p:last-child{
+    padding: 0 10% 0 0;
+    word-break: keep-all;
+}
+.part3 .swiper-pagination{
+    position: absolute;
+    bottom: 7%;
+    left: unset;
+    right: 7%;
+    width: 150px;
+    font-size: 1.2rem;
+}
+.part3 .duk1{
+    background: url(../image/duk_01.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk2{
+    background: url(../image/duk_02.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk3{
+    background: url(../image/duk_03.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk4{
+    background: url(../image/duk_04.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk5{
+    background: url(../image/duk_05.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk6{
+    background: url(../image/duk_06.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk7{
+    background: url(../image/duk_07.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk8{
+    background: url(../image/duk_08.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk9{
+    background: url(../image/duk_09.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk10{
+    background: url(../image/duk_10.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk11{
+    background: url(../image/duk_11.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk12{
+    background: url(../image/duk_12.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.part3 .duk .swiper-slide [class*="duk"]{
+    width: 50%;
+    height: auto;
+    margin:0 7% 5% 0;
+}
+.part3 .duk .swiper-slide [class*="duk"]:hover{
+    background-size: 110%;
+    transition:  all .5s;
+}
+/* part4 */
+.part4{
+    width: 100%;
+    height: 750px;
+    background: url(../image/duk_event.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.part4 h2{
+    color: #fff;
+}
+.part4 h4{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 5% 0;
+    margin-top: 2%;
+}
+.part4 p{
+    color: #fff;
+    padding: 2% 15%;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.part4 .event .e_box p:first-child{
+    width: 280px;
+    margin: 0 auto;
+    padding: 2% 0;
+    text-align: unset;
+}
+.part4 .event .e_box .img1{
+    background: url(../image/duk_e1_1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img2{
+    background: url(../image/duk_e1_2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img3{
+    background: url(../image/duk_e1_3.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img4{
+    background: url(../image/duk_e2_1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img5{
+    background: url(../image/duk_e3_1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img6{
+    background: url(../image/duk_e3_2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box .img7{
+    background: url(../image/duk_e4_1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part4 .event .e_box div[class*="img"]{
+    width: 300px;
+    height:300px;
+    border-radius:0 20px 0 20px;
+    margin: 0 auto;
+    filter: grayscale(60%);
+    transform: scale(0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4)
+}
+.part4 .event .e_box div[class*="img"]:hover{
+    filter: grayscale(40%);
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.part4 .event .swiper-slide-active div[class*="img"]{
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s;
+    margin: 0 auto;
+}
+.part4 .event .swiper-slide{
+    transform: scale(0.8);
+} 
+.part4 .event .swiper-slide-active p{
+    font-size: 1rem;
+}
+.part4 .event .swiper-slide-active h4{
+    font-size: 1.3rem;
+}
+.part4 .event .swiper-slide-prev{
+    transform: translate(15%,5%);
+}
+.part4 .event .swiper-slide-next{
+    transform: translate(-15%,5%);
+}
+.part4 .event .swiper-slide-active{
+    transform: scale(1);
+}
+.part4 .event .swiper-slide-active div[class*="img"]:hover{
+    transform: scale(1);
+    filter: grayscale(0%);
+}
+.part4 .event .swiper-slide .e_box p:first-child{
+    display: none   ;
+}
+.part4 .event .swiper-slide-active .e_box p:first-child{
+    display: block;
+}
+.part4 .swiper-button-next{
+    right: 13vw;
+    color: #fff;
+}
+.part4 .swiper-button-prev {
+    left: 13vw;
+    color: #fff;
+}
+/* part5 */
+.part5{
+    width: 100%;
+    height: 250px;
+    background: url(../image/duk_icon.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part5 p{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+   padding: 5% 0;
+}
+.part5 div{
+    flex-basis: 20%;
+    position: relative;
+}
+.part5 div .icon1{
+    background: url(../image/duk_i1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part5 div .icon2{
+    background: url(../image/duk_i2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part5 div .icon3{
+    background: url(../image/duk_i3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.part5 div div[class*="icon"]{
+    width: 70px;
+    height:70px;
+    margin: 0 auto;
+}
+.part5 > div:hover > div[class*="icon"]{
+    transform: translateY(-10px);
+    transition: all .5s;
+}
+.part5 > div:hover p{
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+/* part6 */
+.part6{
+    width: 100%;
+    height: 700px;
+    background: url(../image/duk_notice.png) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.part6 h5{
+    font-family: 'ChosunCentennial';
+    font-size: 2.3rem;
+    font-weight: lighter;
+    color: #535353;
+    padding: 2% 0;
+}
+.part6 .up{
+    display: flex;
+    justify-content: space-around;
+}
+.part6 .up >  div{
+    flex-basis: 45%;
+}
+.part6 .up p{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    cursor: pointer;
+}
+.part6 .up p:hover{
+    /* border-bottom: 1px solid #626262; */
+    font-weight: 500;
+}
+.part6 .up >  div p span{
+    display: inline-block;
+}
+.part6 .up .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #535353;
+}
+.part6 .up .title p{
+    padding: 0;
+    text-align: center;
+}
+.part6 .down{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.part6 .down .swiper{
+    flex-basis: 48%;
+    height: 200px;
+}
+.part6 .down .banner1 .swiper-slide:nth-child(1){
+    background: url(../image/duk_b1_1.jpeg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .banner1 .swiper-slide:nth-child(2){
+    background: url(../image/duk_b1_2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .banner1 .swiper-slide:nth-child(3){
+    background: url(../image/duk_b1_3.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .banner2 .swiper-slide:nth-child(1){
+    background: url(../image/duk_b2_1.jpeg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .banner2 .swiper-slide:nth-child(2){
+    background: url(../image/duk_b2_2.jpeg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .banner2 .swiper-slide:nth-child(3){
+    background: url(../image/duk_b2_3.jpeg) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.part6 .down .swiper .swiper-slide{
+    width: 100%;
+    height:100%;
+}
+.part6 .up_m{
+    display: none;
+}
+.part6 .down_m{
+    display: none;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background: #626262;
+    padding:5% 15%;
+    display: flex;
+}
+footer p{
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+footer > div:last-child div:first-child p:hover{
+    font-weight: 600;
+}
+footer .logo{
+    width: 250px;
+    height: 70px;
+    background: url(../image/duk_logow.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    cursor: pointer;
+}
+footer > div:last-child{
+    margin: 0 5%;
+    flex-basis: 50%;
+}
+footer > div:last-child >div:first-child p{
+    position: relative;
+}
+footer > div:last-child >div:first-child p:before{
+    content: "∣";
+    position: absolute;
+    top: 1px;
+    right: -15px;
+    width: 5px;
+    height: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+footer > div:last-child >div:first-child p:last-child::before{
+    display: none;
+}
+footer > div:last-child > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+   
+}
